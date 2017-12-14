@@ -1,0 +1,3 @@
+rootProject.name = 'JHReactNative'
+
+include ':app'

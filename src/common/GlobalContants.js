@@ -16,3 +16,10 @@ global.gText = {
   SecondaryTitleFont: 20,
   ThirdTitleFont: 18,
 };
+
+global.imagePath = {
+  tabUnselectHome: require('../resource/ic_tab_homepage.png'),
+  tabSelectHome: require('../resource/ic_tab_homepage_select.png'),
+  tabUnselectMine: require('../resource/ic_tab_my.png'),
+  tabSelectMine: require('../resource/ic_tab_my_select.png'),
+};

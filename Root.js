@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Animated, StyleSheet, View, Text, AppRegistry } from 'react-native';
 import { Provider } from 'mobx-react/native';
+import stores from './src/store';
 
 import App from './src';
 import NetInfoDecorator from './src/common/NetInfoDecorator';
@@ -38,7 +39,7 @@ export default class Root extends Component {
     });
     return (
       <View style={{ flex: 1 }}>
-        <Provider>
+        <Provider {...stores}>
           <App />
         </Provider>
         <Animated.View style={[styles.netInfoView, { top: positionY }]}>

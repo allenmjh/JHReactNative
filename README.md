@@ -3,6 +3,7 @@
 基于 Mobx, react-navigation 的练习项目。
 
 ## 生命周期
+```
 export default class HomeView extends Component {
   constructor(props) {
     super(props);
@@ -64,6 +65,7 @@ export default class HomeView extends Component {
     console.log('=============componentWillUnmount===========');
   }
 }
+```
 
 
 

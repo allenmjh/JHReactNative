@@ -8,6 +8,7 @@ global.gScreen = {
   width: Dimensions.get('window').width,
   height: Dimensions.get('window').height,
   onePix: 1 / PixelRatio.get(),
+  backgroundColor: 'white',
 };
 
 global.gText = {
@@ -22,4 +23,13 @@ global.imagePath = {
   tabSelectHome: require('../resource/ic_tab_homepage_select.png'),
   tabUnselectMine: require('../resource/ic_tab_my.png'),
   tabSelectMine: require('../resource/ic_tab_my_select.png'),
+};
+
+global.toastText = {
+  toastError: '错误',
+};
+
+global.showText = {
+  home: '主页',
+  mine: '我的',
 };

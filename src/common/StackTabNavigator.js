@@ -7,8 +7,7 @@ const Tab = TabNavigator(
     Home: {
       screen: Routers.HomeView,
       navigationOptions: () => ({
-        tabBarLabel: '首页',
-        title: 'HomeView',
+        tabBarLabel: showText.home,
         tabBarIcon: ({ focused, tintColor }) => (
           <Routers.TabBarItem
             focused={focused}
@@ -21,8 +20,7 @@ const Tab = TabNavigator(
     Mine: {
       screen: Routers.MineView,
       navigationOptions: () => ({
-        tabBarLabel: '我的',
-        title: 'MineView',
+        tabBarLabel: showText.mine,
         tabBarIcon: ({ focused, tintColor }) => (
           <Routers.TabBarItem
             focused={focused}
@@ -44,8 +42,8 @@ const Tab = TabNavigator(
     tabBarOptions: {
       showIcon: true, // android 默认不显示 icon, 需要设置为 true 才会显示
       indicatorStyle: { height: 0 }, // android 中TabBar下面会显示一条线，高度设为 0 后就不显示线了
-      activeTintColor: '#dd9408', // 文字和图片选中颜色
-      inactiveTintColor: '#979797', // 文字和图片默认颜色
+      activeTintColor: '#dd9408', // 文字和图片选中颜色   -->自定义的tabbarItem的图片 没有使用tintColor ，不改颜色
+      inactiveTintColor: '#979797', // 文字和图片默认颜色 -->自定义的tabbarItem的图片 没有使用tintColor ，不改颜色
       style: { backgroundColor: '#ffffff' },
       labelStyle: {
         fontSize: 16, // 文字大小

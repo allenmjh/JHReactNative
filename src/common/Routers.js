@@ -1,9 +1,9 @@
-import HomeView from '../pages/home/HomeView';
-import MineView from '../pages/me/MineView';
+import HomePage from '../pages/home/HomePage';
+import MinePage from '../pages/me/MinePage';
 import TabBarItem from '../components/tab/TabBarItem';
 const routers = {
-  MineView: MineView,
-  HomeView: HomeView,
+  MinePage: MinePage,
+  HomePage: HomePage,
   TabBarItem: TabBarItem,
 };
 

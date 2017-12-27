@@ -1,5 +1,4 @@
-import app from './common/app';
-import account from './common/account';
+import app from './common/appStore';
+import account from './common/accountStore';
 
 export default { app, account };
-

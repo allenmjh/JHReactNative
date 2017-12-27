@@ -1,15 +1,16 @@
 import React from 'react';
 import { TabNavigator, TabBarBottom, StackNavigator } from 'react-navigation';
-import Routers from './Routers';
+import { appRouters, appComponents } from './Routers';
+import TabBarItem from '../components/tab/TabBarItem';
 
 const Tab = TabNavigator(
   {
     Home: {
-      screen: Routers.HomeView,
+      screen: appRouters.HomePage,
       navigationOptions: () => ({
         tabBarLabel: showText.home,
         tabBarIcon: ({ focused, tintColor }) => (
-          <Routers.TabBarItem
+          <appComponents.TabBarItem
             focused={focused}
             normalImage={imagePath.tabUnselectHome}
             selectedImage={imagePath.tabSelectHome}
@@ -18,11 +19,11 @@ const Tab = TabNavigator(
       }),
     },
     Mine: {
-      screen: Routers.MineView,
+      screen: appRouters.MinePage,
       navigationOptions: () => ({
         tabBarLabel: showText.mine,
         tabBarIcon: ({ focused, tintColor }) => (
-          <Routers.TabBarItem
+          <appComponents.TabBarItem
             focused={focused}
             normalImage={imagePath.tabUnselectMine}
             selectedImage={imagePath.tabSelectMine}
@@ -55,7 +56,7 @@ const Tab = TabNavigator(
 const Navigator = StackNavigator(
   {
     Tab: { screen: Tab },
-    HomeView: { screen: Routers.HomeView },
+    HomeView: { screen: appRouters.HomePage },
   },
   {
     navigationOptions: {

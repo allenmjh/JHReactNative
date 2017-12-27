@@ -10,7 +10,10 @@ export default class HomeView extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <appComponents.HeaderView />
+        <appComponents.HeaderView
+          isShowLeftBtn={false}
+          title={gShowText.home}
+        />
       </View>
     );
   }

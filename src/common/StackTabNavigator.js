@@ -8,12 +8,12 @@ const Tab = TabNavigator(
     Home: {
       screen: appRouters.HomePage,
       navigationOptions: () => ({
-        tabBarLabel: showText.home,
+        tabBarLabel: gShowText.home,
         tabBarIcon: ({ focused, tintColor }) => (
           <appComponents.TabBarItem
             focused={focused}
-            normalImage={imagePath.tabUnselectHome}
-            selectedImage={imagePath.tabSelectHome}
+            normalImage={gImagePath.tabUnselectHome}
+            selectedImage={gImagePath.tabSelectHome}
           />
         ),
       }),
@@ -21,12 +21,12 @@ const Tab = TabNavigator(
     Mine: {
       screen: appRouters.MinePage,
       navigationOptions: () => ({
-        tabBarLabel: showText.mine,
+        tabBarLabel: gShowText.mine,
         tabBarIcon: ({ focused, tintColor }) => (
           <appComponents.TabBarItem
             focused={focused}
-            normalImage={imagePath.tabUnselectMine}
-            selectedImage={imagePath.tabSelectMine}
+            normalImage={gImagePath.tabUnselectMine}
+            selectedImage={gImagePath.tabSelectMine}
           />
         ),
       }),

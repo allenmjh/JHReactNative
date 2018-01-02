@@ -28,6 +28,9 @@ global.gImagePath = {
   tabSelectMine: require('../resource/ic_tab_my_select.png'),
   headerBack: require('../resource/ic_back_dark.png'),
 };
+global.gHttpUrl = {
+  feedListUrl: 'http://food.boohee.com/fb/v1/feeds/category_feed',
+};
 
 global.gToastText = {
   toastError: '错误',

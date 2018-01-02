@@ -15,9 +15,11 @@ export const appRouters = {
 import TabBarItem from '../components/tab/TabBarItem';
 import HeaderView from '../components/header/HeaderView';
 import HeaderButtonView from '../components/header/Header.ButtonView';
+import HomeItem from '../components/HomeItem';
 
 export const appComponents = {
   TabBarItem: TabBarItem,
   HeaderView: HeaderView,
   HeaderButtonView: HeaderButtonView,
+  HomeItem: HomeItem,
 };

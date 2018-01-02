@@ -73,7 +73,7 @@ export default class HeaderView extends Component {
 HeaderView.propTypes = propTypes;
 
 HeaderView.defaultProps = {
-  backgroundColor: 'red',
+  backgroundColor: 'redrgb(237, 227, 184)',
   isShowLeftBtn: true,
   isShowRightBtn: false,
   title: '标题',
